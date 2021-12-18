@@ -1,0 +1,22 @@
+body{
+    width:100%;
+   
+}
+.conteudo-geral{
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    display:flex;
+    justify-content: space-between;
+}
+@media(max-width:690px){
+    .conteudo-geral{
+        flex-direction: column;
+    }    
+}
+
+
+
+
+
+
+

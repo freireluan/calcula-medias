@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="cssprincipal.css">
+    <link rel="stylesheet" href="cabeçalho.css">
+    <link rel="stylesheet" href="tabela-result.css">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo-principal">Calcule aqui a média das suas notas</h1>
+    </header>
+    <main>
+        <div class="conteudo-geral">
+            <div class="tabelas-resultados">
+                <h3 class="titulo-médias">Média Trimestres</h3>
+                <table class="tabela">
+                    <tr>
+                      <th class="celula"> 1° Trimestre</th>
+                      <td class="celula cla1tri">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula"> 2° Trimestre</th>
+                      <td class="celula cla2tri">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">  3° Trimestre</th>
+                        <td class="celula cla3tri">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Média Geral</th>
+                        <td class="celula mediadatotal">0</td>
+                    </tr>
+                  </table>
+                  <h3 class="titulo-médias">Média por Matérias</h3>
+                  <table class="tabelaM">
+                      <tr>
+                          <th class="celula">Matérias</th>
+                          <th class="celula">Média</th>
+                          <th class="celula">Soma </th>
+                      </tr>
+    
+                    <tr>
+                        <th class="celula">Arte</th>
+                        <td class="celula mediaArtes">0</td>
+                        <td class="celula somaartes">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Biologia</th>
+                        <td class="celula mediaBio">0</td>
+                        <td class="celula somaBio">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Edc. Física</th>
+                        <td class="celula mediafisicae">0</td>
+                        <td class="celula somaefisicae">0</td>
+                        <tr>
+                            <th class="celula">Filosofia</th>
+                            <td class="celula mediafil">0</td>
+                            <td class="celula somfil">0</td>
+                        </tr>
+                    </tr>
+                      <tr>
+                          <th class="celula">Física</th>
+                          <td class="celula mediafisica">0</td>
+                          <td class="celula somafisica">0</td>
+                      </tr>
+                      <tr>
+                        <th class="celula">Geografia</th>
+                        <td class="celula mediageo">0</td>
+                        <td class="celula somageo">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">História</th>
+                        <td class="celula mediahist">0</td>
+                        <td class="celula somahist">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">L. Portuguesa</th>
+                        <td class="celula meidaport">0</td>
+                        <td class="celula somaport">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Matemática</th>
+                        <td class="celula mediamate">0</td>
+                        <td class="celula somamate">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Química</th>
+                        <td class="celula mediaq">0</td>
+                        <td class="celula somaq">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Sociologia</th>
+                        <td class="celula mediass">0</td>
+                        <td class="celula somass">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Edc. Financeira</th>
+                        <td class="celula mediafinan">0</td>
+                        <td class="celula somafinan">0</td>
+                    </tr>
+                    <tr>
+                        <th class="celula">Inglês</th>
+                        <td class="celula mediain">0</td>
+                        <td class="celula somain">0</td>
+                    </tr>
+                  </table>
+            </div>
+            <div id="form">
+               
+                <form  class="formulario">
+                    <h3 id="titleform">Prencha com suas notas</h3>
+                    <div id="flexform">
+                        <div class="sda">
+                            <h5>Arte</h5>
+                            <div class="wed">
+                                <label for="1°" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°"class="input arte" name="arteprimeirorte" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°"class="input arte " name="artesegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°" class="input arte" name="arteterceiro" >
+                            </div>
+                        </div>   
+                        <div class="sda">
+                            <h5>Biologia</h5>
+                            <div class="wed">
+                                <label for="1°a" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°a"class="input" name="Biologiaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°a" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°a"class="input" name="Biologiasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°a" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°a" class="input" name="Biologiaterceiro" >
+                            </div>
+                        </div> 
+                        <div class="sda">
+                            <h5>Edc. Física</h5>
+                            <div class="wed">
+                                <label for="1°b" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°b"class="input" name="EFisicaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°b" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°b"class="input" name="EFisicasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°b" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°b" class="input" name="EFisicaterceiro" >
+                            </div>
+                        </div>                    
+                        <div class="sda">
+                            <h5>Filosofia</h5>
+                            <div class="wed">
+                                <label for="1°c" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°c"class="input" name="Filosofiaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°c" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°c"class="input" name="Filosofiasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°c" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°c" class="input" name="Filosofiaterceiro" >
+                            </div>
+                        </div>                    
+                        <div class="sda">
+                            <h5>Física</h5>
+                            <div class="wed">
+                                <label for="1°d" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°d"class="input" name="fisicaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°d" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°d"class="input" name="fisicasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°d" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°d" class="input" name="fisicaterceiro" >
+                            </div>
+                        </div>
+                        <div class="sda">
+                            <h5>Geografia</h5>
+                            <div class="wed">
+                                <label for="1°e" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°e"class="input" name="geografiaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°e" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°e"class="input" name="geografiasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°e" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°e" class="input" name="geografiaterceiro" >
+                            </div>
+                        </div>
+                        <div class="sda">
+                            <h5>História</h5>
+                            <div class="wed">
+                                <label for="1°f" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°f"class="input" name="historiaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°f" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°f"class="input" name="historiasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°f" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°f" class="input" name="historiaterceiro">
+                        </div> 
+                        </div>
+                        <div class="sda">
+                            <h5>L. Portuguesa</h5>
+                            <div class="wed">
+                                <label for="1°xz" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°xz"class="input" name="portuguesprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°xz" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°xz"class="input" name="portuguessegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°xz" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°xz" class="input" name="portuguesterceiro" >
+                            </div>
+                        </div>  
+                        <div class="sda">
+                            <h5>Matemática</h5>
+                            <div class="wed">
+                                <label for="1°g" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°g"class="input" name="matematicaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°g" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°g"class="input" name="matematicasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°g" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°g" class="input" name="matematicaterceiro" >
+                            </div>
+                        </div>  
+                        <div class="sda">
+                            <h5>Quimíca</h5>
+                            <div class="wed">
+                                <label for="1°h" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°h"class="input" name="quimicaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°h" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°h"class="input" name="quimicasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°h" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°h" class="input" name="quimicaterceiro" >
+                            </div>
+                        </div>    
+                        <div class="sda">
+                            <h5>Sociologia</h5>
+                            <div class="wed">
+                                <label for="1°i" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°i"class="input" name="Sociologiaprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°i" class="label" >Nota 2° trimestre</label>
+                                <input type="tel" id="2°i"class="input" name="Sociologiaegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°i" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°i" class="input" name="Sociologiaterceiro" >
+                            </div>
+                        </div> 
+                        <div class="sda">
+                            <h5>Edc. Financeira</h5>
+                            <div class="wed">
+                                <label for="1°j" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°j"class="input" name="Efinanceiraprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°j" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°j"class="input" name="Efinanceirasegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°j" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°j" class="input" name="Efinanceiraterceiro" >
+                            </div>
+                        </div>    
+                        <div class="sda">
+                            <h5>Inglês</h5>
+                            <div class="wed">
+                                <label for="1°oui" class="label">Nota 1° Trimestre</label>
+                                <input type="tel" id="1°oui"class="input" name="inglesprimeiro" >
+                            </div>
+                            <div class="wed">
+                                <label for="2°oui" class="label">Nota 2° trimestre</label>
+                                <input type="tel" id="2°oui"class="input" name="inglessegundo" >
+                            </div>
+                            <div class="wed">
+                                <label for="3°oui" class="label">Nota 3° Trimestre</label>
+                                <input type="tel" id="3°oui" class="input" name="inglesterceiro" >
+                            </div>
+                        </div> 
+                        <div class="sadp"> 
+                            <button class="botao"> Calcular Média</button>  
+                        </div> 
+                        
+                                                                           
+                                                                         
+                                                                      
+                                                                        
+                                                                        
+                   
+                   
+                </form>
+               
+            </div>
+           
+        </div>
+        
+      
+      
+
+        
+    </main>
+    <script src="formulario.js"></script>
+    <script src="mediastri.js"></script>
+</body>
+</html>

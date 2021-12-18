@@ -1,0 +1,60 @@
+.tabela{
+   
+    width: 370px;
+    margin:0 auto;
+}
+.tabelaM{
+    margin: 1rem;
+    margin-left: 1.5rem;
+}
+
+.celula{
+    width:22%;
+    text-align: center;
+    border:1px solid black;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+.titulo-médias{
+    text-align: center;
+    font-size: 2rem;
+    color:orange;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+@media(min-width:1230px){
+    .tabela{
+        width:600px;
+        margin: 1rem;
+    }
+   
+    .tabelas-resultados{
+        width:40%;
+    }
+}
+@media (max-width:770px) {
+    .tabelas-resultados{
+        width: 97%;
+    }
+    .tabela{
+        display:block;
+    }
+}
+@media(max-width:690px){
+    .tabelaM{
+        margin-left: 5rem;
+    }
+}
+@media(max-width:636px){
+    .tabelaM{
+        margin-left: 1.5rem;
+    }
+}
+
+
+
+
+
